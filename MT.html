@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Caculator</h1>
+<input type="number" id="s1" size="20"/>
+<span id="caculator"></span>
+<input type ='number' id="s2" size="20">
+<span id="="></span>
+<input type="number" id="kq" size="20">
+<h4>Phép tính :</h4>
+<button type='button' onclick ='fun1()'>Addition(+)</button>
+<button type="button" onclick="fun2()">Subtraction(-)</button>
+<button type="button" onclick="fun3()">Muliptication(x)</button>
+<button type="button" onclick="fun4()">Division(/)</button>
+<hr/>
+<script>
+
+    function fun1() {
+        let x = parseInt(document.getElementById("s1").value);
+        let y = parseInt(document.getElementById("s2").value);
+        document.getElementById("kq").value = x + y;
+document.getElementById("caculator").innerHTML = "+";
+document.getElementById("=").innerHTML = "="
+    }
+    function fun2() {
+        let x = parseInt(document.getElementById("s1").value);
+        let y = parseInt(document.getElementById("s2").value);
+        document.getElementById("kq").value = x-y;
+        document.getElementById("caculator").innerHTML = "-";
+        document.getElementById("=").innerHTML = "="
+
+    }
+    function fun3() {
+        let x = parseInt(document.getElementById("s1").value);
+        let y = parseInt(document.getElementById("s2").value);
+        document.getElementById("kq").value = x*y;
+document.getElementById("caculator").innerHTML="x";
+        document.getElementById("=").innerHTML = "="
+
+
+    }
+    function fun4() {
+        let x = parseInt(document.getElementById("s1").value);
+        let y = parseInt(document.getElementById("s2").value);
+        document.getElementById("kq").value = x/y;
+document.getElementById("caculator").innerText="/"
+        document.getElementById("=").innerHTML = "="
+    }
+</script>
+</body>
+</html>
